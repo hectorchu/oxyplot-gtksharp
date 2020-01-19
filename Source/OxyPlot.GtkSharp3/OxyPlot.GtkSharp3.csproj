@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net452</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>OxyPlot.GtkSharp</RootNamespace>
     <PackageId>OxyPlot.GtkSharp3</PackageId>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
@@ -11,13 +11,13 @@
     <PackageIconUrl>https://raw.githubusercontent.com/oxyplot/oxyplot/develop/Icons/OxyPlot_128.png</PackageIconUrl>
     <PackageTags>plotting plot charting chart gtk gtksharp gtk-sharp gtk#</PackageTags>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/oxyplot/oxyplot-gtksharp.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/hectorchu/oxyplot-gtksharp.git</RepositoryUrl>
     <SignAssembly>True</SignAssembly>
     <AssemblyOriginatorKeyFile>OxyPlot.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <Import Project="..\OxyPlot.GtkSharp.Shared\OxyPlot.GtkSharp.Shared.projitems" Label="Shared" />
   <ItemGroup>
-    <PackageReference Include="gtk-sharp-3" Version="3.22.6.4" />
-    <PackageReference Include="OxyPlot.Core" Version="2.0.0-unstable1013" />
+    <PackageReference Include="GtkSharp" Version="3.22.25.56" />
+    <PackageReference Include="OxyPlot.Core" Version="2.0.0" />
   </ItemGroup>
 </Project>
